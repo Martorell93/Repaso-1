@@ -1,0 +1,19 @@
+{
+  "name": "repaso-1",
+  "version": "1.0.0",
+  "description": "Ejercicos m",
+  "main": "RepasoFor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martorell93/Repaso-1.git"
+  },
+  "author": "Jaime Martorell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martorell93/Repaso-1/issues"
+  },
+  "homepage": "https://github.com/Martorell93/Repaso-1#readme"
+}
