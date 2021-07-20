@@ -44,3 +44,32 @@ let signoZodiacal = (fechaDeNacimiento:Date):string => {
 
 let fecha1:Date = new Date("1993-07-25");
 console.log(signoZodiacal(fecha1));
+
+//Funcionalidad país-continente
+let paisContinente = (pais:string) => {
+    if (pais === "España" || pais === "Francia" || pais === "Malta"
+    || pais === "Paises Bajos" || pais === "Macedonia") {
+        console.log("El país: " + pais + " está en Europa");
+    }
+    else if (pais === "México" || pais === "Honduras"
+    || pais === "Argentina" || pais === "Canadá") {
+        console.log("El país: " + pais + " está en Ámerica");
+    }
+    else if (pais === "Congo" || pais === "Marruecos" || pais === "Tanzania"
+    || pais === "Sudáfrica" || pais === "Mauritania") {
+        console.log("El país: " + pais + " está en África");
+    }
+    else if (pais === "China" || pais === "India" || pais === "Japón"
+    || pais === "Indonesia" || pais === "Corea del Sur") {
+        console.log("El país: " + pais + " está en Asia");
+    }
+    else if (pais === "Australia" || pais === "Nueva Zelanda") {
+        console.log("El país: " + pais + " está en Oceanía");
+    }
+    else if (pais === "Unión de paises") {
+        console.log("El país: " + pais + " está en Antartida");
+    }
+}
+
+let pais: string = "Argentina";
+paisContinente(pais);
