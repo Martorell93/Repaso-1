@@ -197,3 +197,21 @@ let arr2:string[] = ["patata", "camión", "pera", "123"];
 console.log(sumaCaracteres(arr2));
 console.log("------------------------------------------------------");
 console.log("");
+
+//Funcionalidad par o impar
+let parOImpar = (parametro:number) => {
+    if ((parametro % 2) === 0) {
+        console.log("El parámetro incluido es PAR");
+    }
+    else {
+        console.log("El parámetro incluido es IMPAR");
+    }
+}
+
+console.log("Funcionalidad que identifica si el parámetro introducido "
++ "es par o impar");
+console.log("Ejemplo: parametro = 23.");
+let parametro:number = 23;
+parOImpar(parametro);
+console.log("------------------------------------------------------");
+console.log("");
