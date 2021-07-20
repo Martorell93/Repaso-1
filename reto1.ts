@@ -136,3 +136,24 @@ let arr1: string[] = ["Rojo", "Blanco", "Amarillo", "Oro"];
 arrayString(arr1);
 console.log("------------------------------------------------------");
 console.log("");
+
+//Funcionalidad existe numero par
+function existeNumeroPar(num : number[]):boolean {
+    let i:number = 0;
+    let resultado:boolean = false;
+    while (i < num.length && !resultado) {
+        if (num[i] % 2 === 0) {
+            resultado = true;
+        }
+        i++;
+    }
+    return resultado;
+}
+console.log("Funcionalidad que permite detectar si existe un numero "
++ "par en el array dado.")
+console.log("Ejemplo con el array: [1, 5, 9, 11, 8, 6, 2, 0]")
+let num: number[] = [1, 5, 9, 11, 8, 6, 2, 0];
+let sol1: boolean = existeNumeroPar(num);
+console.log(sol1);
+console.log("------------------------------------------------------");
+console.log("");
