@@ -112,3 +112,27 @@ let sol:number[] = arrayInvertido(arr);
 console.log(sol);
 console.log("------------------------------------------------------");
 console.log("");
+
+//Funcionalidad array string
+function arrayString(arr:string[]) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === "Rojo" || arr[i] === "Naranja" ||
+        arr[i] === "Amarillo" || arr[i] === "Verde" ||
+        arr[i] === "Azul" || arr[i] === "Violeta") {
+            console.log("El color: " + arr[i] + ", está en el"
+            + " arcoiris");
+        }
+        else {
+            console.log("El color: " + arr[i] + ", NO está en el"
+            + " arcoiris");
+        }
+    }
+}
+
+console.log("Funcionalidad que permite identificiar que colores"
+ + " dentro de un array pertenecen al arcoiris.");
+console.log("Ejemplo: [Rojo, Blanco, Amarillo, Oro].")
+let arr1: string[] = ["Rojo", "Blanco", "Amarillo", "Oro"];
+arrayString(arr1);
+console.log("------------------------------------------------------");
+console.log("");
