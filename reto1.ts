@@ -40,10 +40,14 @@ let signoZodiacal = (fechaDeNacimiento:Date):string => {
         signoZodiaco = "Capricornio";
     }
     return signoZodiaco;
-}
-
+};
+console.log("");
+console.log("Funcionalidad dada la fecha devuelve signo del zodiaco");
+console.log("Ejemplo con fecha: 25/07/1993");
 let fecha1:Date = new Date("1993-07-25");
 console.log(signoZodiacal(fecha1));
+console.log("------------------------------------------------------");
+console.log("");
 
 //Funcionalidad país-continente
 let paisContinente = (pais:string) => {
@@ -70,6 +74,25 @@ let paisContinente = (pais:string) => {
         console.log("El país: " + pais + " está en Antartida");
     }
 }
-
+console.log("Funcionalidad dada el país determinar a qué continente"
+ + " pertenece");
+console.log("Ejemplo con país: Argentina");
 let pais: string = "Argentina";
 paisContinente(pais);
+console.log("------------------------------------------------------");
+console.log("");
+
+//Funcionalidad imprimir números impares
+let numerosImpares = (numero:number) => {
+    for (numero; numero >= 0; numero--) {
+        if (numero % 2 != 0) {
+            console.log(numero);
+        }
+   }
+}
+console.log("Funcionalidad dada un número cualquiera imprime por " +
+"consola los impares exsistentes");
+console.log("Ejemplo con número: 10");
+numerosImpares(10);
+console.log("------------------------------------------------------");
+console.log("");
