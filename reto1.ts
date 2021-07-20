@@ -159,7 +159,7 @@ console.log("------------------------------------------------------");
 console.log("");
 
 //Funcionalidad nombres que empiezan por M
-function arrayNombres (nombres:string[]) {
+function arrayNombres (nombres:string[]):boolean {
     let i:number = 0;
     let resultado:boolean = false;
     while (i < nombres.length && !resultado) {
@@ -179,5 +179,21 @@ console.log("Funcionalidad que identifica si y solo si todos los "
 console.log("Ejemplo con el array: [María, Juan, Maricarmen]")
 let nombres:string[] = ["María", "Juan", "Maricarmen"];
 console.log(arrayNombres(nombres));
+console.log("------------------------------------------------------");
+console.log("");
+
+//Funcionalidad suma de caracteres
+let sumaCaracteres = (arr2: string[]):number => {
+    let contador:number = 0;
+    for (let i = 0; i < arr2.length; i++) {
+            contador += arr2[i].length;
+        }
+    return contador;
+}
+console.log("Funcionalidad que devuelve la suma del número de "
++ "caracteres de las palabras almacenadas en el array");
+console.log("Ejemeplo con el array: [patata, camión, pera, 123].");
+let arr2:string[] = ["patata", "camión", "pera", "123"];
+console.log(sumaCaracteres(arr2));
 console.log("------------------------------------------------------");
 console.log("");
