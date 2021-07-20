@@ -157,3 +157,27 @@ let sol1: boolean = existeNumeroPar(num);
 console.log(sol1);
 console.log("------------------------------------------------------");
 console.log("");
+
+//Funcionalidad nombres que empiezan por M
+function arrayNombres (nombres:string[]) {
+    let i:number = 0;
+    let resultado:boolean = false;
+    while (i < nombres.length && !resultado) {
+        i++;
+        if (nombres[i][0] === "M") {
+            resultado = false;
+        }
+        else {
+            resultado = true;
+        }
+        
+        return !resultado;
+    }
+}
+console.log("Funcionalidad que identifica si y solo si todos los "
++ "nombres del array empiezan por la letra M.")
+console.log("Ejemplo con el array: [María, Juan, Maricarmen]")
+let nombres:string[] = ["María", "Juan", "Maricarmen"];
+console.log(arrayNombres(nombres));
+console.log("------------------------------------------------------");
+console.log("");
