@@ -96,3 +96,19 @@ console.log("Ejemplo con número: 10");
 numerosImpares(10);
 console.log("------------------------------------------------------");
 console.log("");
+
+//Funcionalidad array invertido
+function arrayInvertido(arr:number[]):number[] {
+    let arrayNuevo:number[] = [];
+    for (let i = (arr.length - 1); i >= 0; i--) {
+        arrayNuevo.push(arr[i]);
+    }
+    return arrayNuevo;
+}
+console.log("Funcionalidad que permite invertir un array");
+console.log("EJemplo con el array: [1, 2, 3, 4]")
+let arr:number[] = [1, 2, 3, 4];
+let sol:number[] = arrayInvertido(arr);
+console.log(sol);
+console.log("------------------------------------------------------");
+console.log("");
