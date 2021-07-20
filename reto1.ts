@@ -215,3 +215,23 @@ let parametro:number = 23;
 parOImpar(parametro);
 console.log("------------------------------------------------------");
 console.log("");
+
+console.log("Comprobar usando las funcionalidades: "
++ "Suma caracteres en un array y Par o impar.")
+console.log("Los siguientes array: " +"\n" +
+"1.- [Casa, Coche, Cuidad, Cesta]" + "\n" +
+"2.- [Barco, Baca, Bicicleta, Bisiesto, Brasil]" +"\n" +
+"3.- [Venezuela, Veneno, Voltaje]");
+let nombres1: string[] = ["Casa", "Coche", "Cuidad", "Cesta"];
+let nombres2:string[] = ["Barco", "Baca", "Bicicleta", "Bisiesto"
+, "Brasil"];
+let nombres3 :string[] = ["Venezuela", "Veneno", "Voltaje"];
+let nombres1Sum:number = sumaCaracteres(nombres1);
+let nombres2Sum:number = sumaCaracteres(nombres2);
+let nombres3Sum:number = sumaCaracteres(nombres3);
+console.log("El contador del array: 1. Es: " + nombres1Sum);
+parOImpar(nombres1Sum);
+console.log("El contador del array: 2. Es: " + nombres2Sum);
+parOImpar(nombres2Sum);
+console.log("El contador del array: 3. Es: " + nombres3Sum);
+parOImpar(nombres3Sum);
